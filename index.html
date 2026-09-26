@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aayusetu | Rural Healthcare Journey Assurance Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      // Auto-redirect if user opens index.html directly via file:/// protocol in browser
+      if (window.location.protocol === 'file:') {
+        window.location.href = 'http://localhost:3000/';
+      }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
+    
+    <!-- Fallback container if auto-redirect is blocked by Chrome file security -->
+    <div id="file-protocol-fallback" style="display: none;" className="min-h-screen bg-slate-950 flex items-center justify-center p-6 text-center">
+      <div style="max-width: 500px; margin: 100px auto; background: #0f172a; padding: 32px; border-radius: 24px; border: 1px solid #1e293b; color: #f8fafc; font-family: sans-serif;">
+        <h1 style="color: #34d399; font-size: 24px; font-weight: bold; margin-bottom: 12px;">AAYUSETU PLATFORM IS RUNNING</h1>
+        <p style="color: #94a3b8; font-size: 14px; margin-bottom: 24px;">
+          You opened index.html directly as a local file. Please open the running server URL in your browser:
+        </p>
+        <a href="http://localhost:3000/" style="display: inline-block; background: #10b981; color: #020617; padding: 12px 24px; border-radius: 12px; font-weight: bold; text-decoration: none; font-size: 16px;">
+          👉 Launch App at http://localhost:3000/
+        </a>
+      </div>
+    </div>
+
+    <script>
+      if (window.location.protocol === 'file:') {
+        setTimeout(function() {
+          var fb = document.getElementById('file-protocol-fallback');
+          if (fb) fb.style.display = 'block';
+        }, 300);
+      }
+    </script>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
